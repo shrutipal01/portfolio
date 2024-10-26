@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3c16401be6.js" crossorigin="anonymous"></script>
+    <style>
+        #skillList li{
+            list-style: disc;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!-- <img src="Images/logo.png" class="logo"> -->
+                <span style="font-size: x-large; font-weight: 600;"><span style="font-weight: 700; color: red;"></span>Shruti Pal</span>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Profiles</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openMenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1>Hi, I'm <span class="auto-type"></span></h1>
+                <p>Full Stack Web Developer</p>
+            </div>
+        </div>
+    </div>
+    <!-- header section ends here -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="C:\Users\SHRUTI PAL\OneDrive\Desktop\PortfolioProject\PortfolioProject\Portfolio-Website\Images\resume photo 2.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>BCA graduate, looking for a
+                        software engineer role with strong
+                        command in Java, Python and Web Development. Excellent communication
+                        skills and ability to understand
+                        client requirements. Continuous
+                        learner of new technologies,
+                        strategies, and tools</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul id="skillList">
+                            <li>JAVA</li>
+                            <li>Python</li>
+                            <li>C/C++</li>
+                            <li>Html</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                            <li>ReactJs</li>
+                            <li>MongoDB</li>
+                            <li>MySQL</li>
+                            <li>NodeJs</li>
+                            <li>ExpressJs</li>
+                            <li>Git</li>
+                            <li>Git Hub</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022-Present</span><br>Coding Instructor at Brainlox</li>
+                            <li><span>2023- Present</span><br>Subject Matter Expert in Numerade</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022-2025</span><br>BCA from ARKA JAIN UNIVERSITY, JAMSHEDPUR</li>
+                            <li><span>2022</span><br>Higher Secondary from The Pentecostal Assembly School, Bokaro</li>
+                            <li><span>2020</span><br>High School from The Pentecostal Assembly School, Bokaro</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About Section Ends -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Coding Profiles</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-github"></i>
+                    <h2>Git Hub</h2>
+                    <a href="https://github.com/shrutipal01">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>Code Chef</h2>
+                    <a href="https://www.codechef.com/users/sharp_toy_21">Learn More</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>Leet Code</h2>
+                    <a href="https://leetcode.com/u/Shrutipal01/">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- My Services Section Ends -->
+    <div id="portfolio">
+        <div class="container">
+            <div class="sub-title">My Portfolio</div>
+            <div class="work-list">
+                <div class="work">
+                    <img src="Images/to-do-list-apps.png">
+                    <div class="layer">
+                        <h3>TO-DO-LIST</h3>
+                        <p>This is a TO-DO-LIST Website where any user can write there daily to-do tasks which will help them in completing their tasks on time.
+                        </p>
+                        <a href="https://omdey.github.io/TO-DO-LIST/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/Weather App.png">
+                    <div class="layer">
+                        <h3>Weather Forecasting App</h3>
+                        <p>This Weather Forecasting Website Forecasts the Weather of any Place in the World
+                            You can visit this Website by clicking on the given Link.
+                        </p>
+                        <a href="https://omdey.github.io/Weather-Forecasting-App/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/NewsApp.png">
+                    <div class="layer">
+                        <h3>News App</h3>
+                        <p>This Website is made from React where any user can see daily News of any Categories.
+                        </p>
+                        <a href="https://github.com/OmDEY/NewsApp"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="Images/iNotebook.png">
+                    <div class="layer">
+                        <h3>iNotebook</h3>
+                        <p>This is a Full Stack Website where users can store there notes on the cloud.
+                        </p>
+                        <a href="https://github.com/OmDEY/iNotebook"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+    <!-- My Work Section Ends -->
+    <div id="contact" class="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> shrutipal834@gmail.com</p>
+                    <p><i class="fa-solid fa-square-phone"></i> 9798561152</p>
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href="www.linkedin.com/in/shruti-pal-498791280"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-whatsapp"></i></a>
+                        <a href="https://github.com/shrutipal01"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="SHRUTI PAL RESUME.pdf" download class="btn btn-2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Leave Your Message"></textarea>
+                        <button type="submit" class="btn btn-2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright <i class="fa-regular fa-copyright"></i> Shruti Pal.</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed(".auto-type", {
+            strings: ["Shruti Pal", "a Coder", "a Full Stack Web Developer"],
+            typeSpeed: 150,
+            backSpeed: 150,
+            loop: true
+        })
+    </script>
+</body>
+
+</html>
